@@ -1,7 +1,7 @@
 <div align="center">
 	<br/>
 	<p>
-    <img src="https://github.com/xiaopeng12138/WACVR/blob/main/PreviewImages/WACVR-LOGO.png?raw=true" width="546" />
+    <img src="https://github.com/UiharuKazari2008/WACVR/blob/main/PreviewImages/WACVR-LOGO.png?raw=true" width="546" />
 	</p>
   <br/>
   <p>
@@ -11,11 +11,11 @@
   </p>
   <p>
     <a href="https://discord.gg/4aFV5QJWN5"><img src="https://img.shields.io/discord/1028269444780261436?color=5865F2&logo=discord&logoColor=white" alt="Discord server"/></a>
-    <a href="https://github.com/xiaopeng12138/WACVR/actions"><img src="https://github.com/xiaopeng12138/WACVR/actions/workflows/build.yml/badge.svg" alt="Build status"/></a>
+    <a href="https://github.com/UiharuKazari2008/WACVR/actions"><img src="https://github.com/UiharuKazari2008/WACVR/actions/workflows/build.yml/badge.svg" alt="Build status"/></a>
 </div>
 
 ## Preview
-<img src="https://github.com/xiaopeng12138/WACVR/blob/main/PreviewImages/Preview.png?raw=true" width="350" />
+<img src="https://github.com/UiharuKazari2008/WACVR/blob/main/PreviewImages/Preview.png?raw=true" width="350" />
 
 ## About this project
 - Model is almost 1:1 to physical cabinet
@@ -56,10 +56,12 @@ Please note that you should refer to the parent fork for the latest updates, I w
 - Please support your local arcade if you can!
 
 ## How to use
-- Get the game somehow and make sure it's clean. (DO NOT ASK ANYTHING THAT IS DIRECTLY RELATED TO THE GAME ITSELF)
+- Download the game files from https://mega.nz/file/ZNQQUKyY
+  - Key c9HGn8TOL1fD5Cr6KkOorqzT3L-dBMcE1UsNMGd073g
 - You have 2 ways to setup the game, Automated (recommended) or Manual.
 
 ### Automated (recommended)
+[Video Tutorial](https://www.youtube.com/watch?v=bViY68ltIz8)<br/>
 Automated setup configures the game and downloads WACVR, xxxxtools, and other files for you.  
 Thank you to Glub Glub for releasing this!
 - Download [Glub Glub setup environment](https://github.com/ArcadeGlubGlub/GameSetup/raw/master/WACCAReverse-GlubGlub.7z) and extract it to a folder.
