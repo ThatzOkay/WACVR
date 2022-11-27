@@ -28,11 +28,16 @@
 - LIV avatars/mixed reality
 
 ## About this fork
+Please note that you should refer to the parent fork for the latest updates, I will pull as needed but I would prefer my fork to considered custom
 - Updated Enviorment to make it feel like your not in a void
 - Moved Controls behind (Once configured you really are not touching them again)
 - Panel Locked by Default
 - Added posters on the walls
 - Updated lighting
+
+## Planned Changes
+- Use VRChat Avatars for streaming
+- Adjustable colider depth
 
 ## Supported platforms
 - All SteamVR devices (Index, HTC, Oculus, etc.)
