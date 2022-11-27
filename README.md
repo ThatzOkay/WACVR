@@ -15,7 +15,7 @@
 </div>
 
 ## Preview
-<img src="https://github.com/UiharuKazari2008/WACVR/blob/main/PreviewImages/Preview.png?raw=true" width="350" />
+<img src="https://github.com/UiharuKazari2008/WACVR/blob/main/PreviewImages/Preview.jpg?raw=true" width="350" />
 
 ## About this project
 - Model is almost 1:1 to physical cabinet
@@ -73,7 +73,7 @@ Thank you to Glub Glub for releasing this!
 
 ### Manual
 - Make sure the game properly and uses latest xxxxtools.
-- Download [the nightly version of WACVR](https://nightly.link/xiaopeng12138/WACVR/workflows/build/main/artifact.zip).
+- Download [the nightly version of WACVR](https://nightly.link/UiharuKazari2008/WACVR/workflows/build/main/artifact.zip).
 - You have 2 ways to connect touch to the game. Please only choose one of them:
 
 #### mercuryio
