@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PanelHiderButton : MonoBehaviour
 {
     private int colliderCount = 0;
-    private bool isLocked = false;
+    private bool isLocked = true;
     private float timer = 0f;
     private bool actionTaken = false;
     private Renderer r;

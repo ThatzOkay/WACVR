@@ -27,6 +27,13 @@
 - 3rd person and smoothed 1st person cameras
 - LIV avatars/mixed reality
 
+## About this fork
+- Updated Enviorment to make it feel like your not in a void
+- Moved Controls behind (Once configured you really are not touching them again)
+- Panel Locked by Default
+- Added posters on the walls
+- Updated lighting
+
 ## Supported platforms
 - All SteamVR devices (Index, HTC, Oculus, etc.)
 - All Oculus devices (Oculus Desktop App)
