@@ -65,8 +65,7 @@ Also this fork will be a mess for a while as i work my trough all my ideas
 - Please support your local arcade if you can!
 
 ## How to use
-- Download the game files from https://mega.nz/file/ZNQQUKyY
-  - c9HGn8TOL1fD5Cr6KkOorqzT3L-dBMcE1UsNMGd073g
+- Obtain the game
 - You have 2 ways to setup the game, Automated (recommended) or Manual.
 
 ### Automated (recommended)
