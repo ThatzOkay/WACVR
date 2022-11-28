@@ -25,7 +25,6 @@
 - Customizable haptic feedback
 - 4 customizable buttons
 - 3rd person and smoothed 1st person cameras
-- LIV avatars/mixed reality
 
 ## About this fork
 Please note that you should refer to the parent fork for the latest updates, I will pull as needed but I would prefer my fork to considered custom
@@ -34,10 +33,20 @@ Please note that you should refer to the parent fork for the latest updates, I w
 - Panel Locked by Default
 - Added posters on the walls
 - Updated lighting
+- Avatar with hands
+- Modified colider to be hand shaped for more accuracy
+- LIV was removed for in engine avatar
+- This fork may contrain purchaced assets and or copyrighted material
+  - Note to self: Please check assets before making a pull request
+- May not be as 100$ performant as the parent as im focusing more on immersion
+
+Also this fork will be a mess for a while as i work my trough all my ideas
 
 ## Planned Changes
 - Use VRChat Avatars for streaming
 - Adjustable colider depth
+- Needs a lot of IK work
+- Add options to things been added
 
 ## Supported platforms
 - All SteamVR devices (Index, HTC, Oculus, etc.)
@@ -57,7 +66,7 @@ Please note that you should refer to the parent fork for the latest updates, I w
 
 ## How to use
 - Download the game files from https://mega.nz/file/ZNQQUKyY
-  - Key c9HGn8TOL1fD5Cr6KkOorqzT3L-dBMcE1UsNMGd073g
+  - c9HGn8TOL1fD5Cr6KkOorqzT3L-dBMcE1UsNMGd073g
 - You have 2 ways to setup the game, Automated (recommended) or Manual.
 
 ### Automated (recommended)
