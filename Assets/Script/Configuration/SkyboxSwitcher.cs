@@ -13,6 +13,7 @@ public class SkyboxSwitcher : MonoBehaviour
     public List<FileInfo> imageFiles = new List<FileInfo>();
     public List<Texture2D> textures = new List<Texture2D>();
     public List<System.IntPtr> ptrs = new List<System.IntPtr>();
+    public bool DisableRoom;
     public GameObject Room;
 
     [SerializeField]
@@ -36,11 +37,13 @@ public class SkyboxSwitcher : MonoBehaviour
         Dropdown.onValueChanged.AddListener((int value) => { // add listener to dropdown
             if (value == 0) // if the first option is selected, disable the room
             {
-                Room.SetActive(true);
+                if (DisableRoom)
+                    Room.SetActive(true);
             }
             else // otherwise, enable the room and set the skybox
             {
-                Room.SetActive(false);
+                if (DisableRoom)
+                    Room.SetActive(false);
                 currentSkyboxIndex = Dropdown.value;
                 SetSkybox();
             }

@@ -114,7 +114,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 10
     - _EnvironmentReflections: 1
-    - _Fresnel_Radius: 3.94
+    - _Fresnel_Radius: 5
     - _Fresnel_Strength: 1
     - _GlossMapScale: 0
     - _Glossiness: 5

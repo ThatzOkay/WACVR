@@ -94,4 +94,12 @@ public class PanelButton : MonoBehaviour
         if (!isToggle)
             cr.material.color = orgColor;
     }
+
+    public void PressButton()
+    {
+        ButtonPress();
+        if (doesBeep)
+            audioSrc?.Play();
+        ButtonRelease();
+    }
 }

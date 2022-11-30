@@ -12,8 +12,13 @@ public class Config
     public int SpectatorFPS = 2;
     public float SpectatorFOV = 40;
     public float SpectatorSmooth = 0.05f;
+    public int TPCamActivePin = 0;
     public float[] TPCamPosition = new float[3] { -0.6f, 1.8f, -1.2f };
     public float[] TPCamRotation = new float[3] { 23, 35, 0 };
+    public float[] TPCamPosition1 = new float[3] { -0.6f, 1.8f, -1.2f };
+    public float[] TPCamRotation1 = new float[3] { 23, 35, 0 };
+    public float[] TPCamPosition2 = new float[3] { -0.6f, 1.8f, -1.2f };
+    public float[] TPCamRotation2 = new float[3] { 23, 35, 0 };
     public float HandSize = 0.08f;
     public float HandX = 0;
     public float HandY = 0;
@@ -38,6 +43,7 @@ public class Config
     public bool DynamicProbe = true;
     public bool PostProcess = true;
     public int AntiAliasing = 0;
+    public bool batFileAutoStart = true;
     public string batFileLocation = "";
 
 }

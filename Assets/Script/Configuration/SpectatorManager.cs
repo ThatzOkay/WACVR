@@ -78,23 +78,108 @@ public class SpectatorManager : MonoBehaviour
     {
         if (SpectatorTPTarget == null)
             return;
-        SpectatorTPTarget.position = new Vector3(ConfigManager.config.TPCamPosition[0],
+        switch (ConfigManager.config.TPCamActivePin)
+        {
+            default:
+            case 0:
+                SpectatorTPTarget.position = new Vector3(ConfigManager.config.TPCamPosition[0],
                                                 ConfigManager.config.TPCamPosition[1],
                                                 ConfigManager.config.TPCamPosition[2]);
-        SpectatorTPTarget.rotation = Quaternion.Euler(ConfigManager.config.TPCamRotation[0],
-                                                     ConfigManager.config.TPCamRotation[1],
-                                                     ConfigManager.config.TPCamRotation[2]);
+                SpectatorTPTarget.rotation = Quaternion.Euler(ConfigManager.config.TPCamRotation[0],
+                                                             ConfigManager.config.TPCamRotation[1],
+                                                             ConfigManager.config.TPCamRotation[2]);
+                break;
+            case 1:
+                SpectatorTPTarget.position = new Vector3(ConfigManager.config.TPCamPosition1[0],
+                                                ConfigManager.config.TPCamPosition1[1],
+                                                ConfigManager.config.TPCamPosition1[2]);
+                SpectatorTPTarget.rotation = Quaternion.Euler(ConfigManager.config.TPCamRotation1[0],
+                                                             ConfigManager.config.TPCamRotation1[1],
+                                                             ConfigManager.config.TPCamRotation1[2]);
+                break;
+            case 2:
+                SpectatorTPTarget.position = new Vector3(ConfigManager.config.TPCamPosition2[0],
+                                                ConfigManager.config.TPCamPosition2[1],
+                                                ConfigManager.config.TPCamPosition2[2]);
+                SpectatorTPTarget.rotation = Quaternion.Euler(ConfigManager.config.TPCamRotation2[0],
+                                                             ConfigManager.config.TPCamRotation2[1],
+                                                             ConfigManager.config.TPCamRotation2[2]);
+                break;
+
+        }
+        
     }
+
+    public void RecallCameraLocation(int pinNumber)
+    {
+        if (SpectatorTPTarget == null)
+            return;
+        switch (pinNumber)
+        {
+            default:
+            case 0:
+                SpectatorTPTarget.position = new Vector3(ConfigManager.config.TPCamPosition[0],
+                                                ConfigManager.config.TPCamPosition[1],
+                                                ConfigManager.config.TPCamPosition[2]);
+                SpectatorTPTarget.rotation = Quaternion.Euler(ConfigManager.config.TPCamRotation[0],
+                                                             ConfigManager.config.TPCamRotation[1],
+                                                             ConfigManager.config.TPCamRotation[2]);
+                break;
+            case 1:
+                SpectatorTPTarget.position = new Vector3(ConfigManager.config.TPCamPosition1[0],
+                                                ConfigManager.config.TPCamPosition1[1],
+                                                ConfigManager.config.TPCamPosition1[2]);
+                SpectatorTPTarget.rotation = Quaternion.Euler(ConfigManager.config.TPCamRotation1[0],
+                                                             ConfigManager.config.TPCamRotation1[1],
+                                                             ConfigManager.config.TPCamRotation1[2]);
+                break;
+            case 2:
+                SpectatorTPTarget.position = new Vector3(ConfigManager.config.TPCamPosition2[0],
+                                                ConfigManager.config.TPCamPosition2[1],
+                                                ConfigManager.config.TPCamPosition2[2]);
+                SpectatorTPTarget.rotation = Quaternion.Euler(ConfigManager.config.TPCamRotation2[0],
+                                                             ConfigManager.config.TPCamRotation2[1],
+                                                             ConfigManager.config.TPCamRotation2[2]);
+                break;
+
+        }
+        ConfigManager.config.TPCamActivePin = pinNumber;
+        ConfigManager.SaveFile();
+    }
+
     public void SaveTransform() // will be called from TPCameraCube
     {
         if (SpectatorTPTarget == null)
             return;
-        ConfigManager.config.TPCamPosition[0] = SpectatorTPTarget.position.x;
-        ConfigManager.config.TPCamPosition[1] = SpectatorTPTarget.position.y;
-        ConfigManager.config.TPCamPosition[2] = SpectatorTPTarget.position.z;
-        ConfigManager.config.TPCamRotation[0] = SpectatorTPTarget.rotation.eulerAngles.x;
-        ConfigManager.config.TPCamRotation[1] = SpectatorTPTarget.rotation.eulerAngles.y;
-        ConfigManager.config.TPCamRotation[2] = SpectatorTPTarget.rotation.eulerAngles.z;
-        ConfigManager.SaveFileWait();
+        switch (ConfigManager.config.TPCamActivePin)
+        {
+            default:
+            case 0:
+                ConfigManager.config.TPCamPosition[0] = SpectatorTPTarget.position.x;
+                ConfigManager.config.TPCamPosition[1] = SpectatorTPTarget.position.y;
+                ConfigManager.config.TPCamPosition[2] = SpectatorTPTarget.position.z;
+                ConfigManager.config.TPCamRotation[0] = SpectatorTPTarget.rotation.eulerAngles.x;
+                ConfigManager.config.TPCamRotation[1] = SpectatorTPTarget.rotation.eulerAngles.y;
+                ConfigManager.config.TPCamRotation[2] = SpectatorTPTarget.rotation.eulerAngles.z;
+                break;
+            case 1:
+                ConfigManager.config.TPCamPosition1[0] = SpectatorTPTarget.position.x;
+                ConfigManager.config.TPCamPosition1[1] = SpectatorTPTarget.position.y;
+                ConfigManager.config.TPCamPosition1[2] = SpectatorTPTarget.position.z;
+                ConfigManager.config.TPCamRotation1[0] = SpectatorTPTarget.rotation.eulerAngles.x;
+                ConfigManager.config.TPCamRotation1[1] = SpectatorTPTarget.rotation.eulerAngles.y;
+                ConfigManager.config.TPCamRotation1[2] = SpectatorTPTarget.rotation.eulerAngles.z;
+                break;
+            case 2:
+                ConfigManager.config.TPCamPosition2[0] = SpectatorTPTarget.position.x;
+                ConfigManager.config.TPCamPosition2[1] = SpectatorTPTarget.position.y;
+                ConfigManager.config.TPCamPosition2[2] = SpectatorTPTarget.position.z;
+                ConfigManager.config.TPCamRotation2[0] = SpectatorTPTarget.rotation.eulerAngles.x;
+                ConfigManager.config.TPCamRotation2[1] = SpectatorTPTarget.rotation.eulerAngles.y;
+                ConfigManager.config.TPCamRotation2[2] = SpectatorTPTarget.rotation.eulerAngles.z;
+                break;
+
+        }
+        ConfigManager.SaveFile();
     }
 }
