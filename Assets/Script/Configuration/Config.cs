@@ -43,7 +43,7 @@ public class Config
     public bool DynamicProbe = true;
     public bool PostProcess = true;
     public int AntiAliasing = 0;
-    public bool batFileAutoStart = true;
+    public bool AutoStart = true;
     public string batFileLocation = "";
 
 }

@@ -22,16 +22,11 @@ public class PanelButton : MonoBehaviour
     public bool isOn;
     private int _insideColliderCount = 0;
 
-    private Renderer cr;
-    private Color orgColor;
     //public GameObject camera; // just generating warnings lmao
     public AudioSource audioSrc;
 
     void Start()
     {
-        cr = GetComponent<Renderer>();
-        orgColor = cr.material.color;
-
         if (isToggle)
         {
             // initialize toggle state
@@ -65,14 +60,12 @@ public class PanelButton : MonoBehaviour
         {
             if (!isOn)
             {
-                cr.material.color = Color.green;
                 keybd_event(System.Convert.ToByte(key2), (byte)MapVirtualKey((uint)key2, 0), 2, UIntPtr.Zero);
                 keybd_event(System.Convert.ToByte(key), (byte)MapVirtualKey((uint)key, 0), 0, UIntPtr.Zero);
                 isOn = true;
             }
             else
             {
-                cr.material.color = Color.red;
                 keybd_event(System.Convert.ToByte(key), (byte)MapVirtualKey((uint)key, 0), 2, UIntPtr.Zero);
                 keybd_event(System.Convert.ToByte(key2), (byte)MapVirtualKey((uint)key2, 0), 0, UIntPtr.Zero);
                 isOn = false;
@@ -81,7 +74,6 @@ public class PanelButton : MonoBehaviour
         }
         else
         {
-            cr.material.color = Color.white;
             keybd_event(System.Convert.ToByte(key), (byte)MapVirtualKey((uint)key, 0), 0, UIntPtr.Zero);
         }
     }
@@ -91,8 +83,6 @@ public class PanelButton : MonoBehaviour
         ButtonReleased?.Invoke();
         keybd_event(System.Convert.ToByte(key), (byte)MapVirtualKey((uint)key, 0), 2, UIntPtr.Zero);
         keybd_event(System.Convert.ToByte(key2), (byte)MapVirtualKey((uint)key2, 0), 2, UIntPtr.Zero);
-        if (!isToggle)
-            cr.material.color = orgColor;
     }
 
     public void PressButton()
