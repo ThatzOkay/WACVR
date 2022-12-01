@@ -29,6 +29,12 @@ public class StartBatchManager : MonoBehaviour
         OnDestroy();
     }
 
+    public void ExitApplication()
+    {
+        StopBat();
+        Application.Quit();
+    }
+
     public void SetAutoStartValue(bool Active)
     {
         ConfigManager.config.batFileAutoStart = Active;
