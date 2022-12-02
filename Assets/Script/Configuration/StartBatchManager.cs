@@ -27,11 +27,13 @@ public class StartBatchManager : MonoBehaviour
     public void StopBat()
     {
         OnDestroy();
-    }
 
     public void ExitApplication()
     {
         StopBat();
+        #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+        #endif
         Application.Quit();
     }
 
