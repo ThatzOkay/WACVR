@@ -30,7 +30,7 @@ public class Config
     public float HapticAmplitude = 0.75f;
     public int TouchSampleRate  = 3;
     public int HandTrackingMode = 1;
-    public float Threshold = 0.3f;
+    public float Threshold = 0.3f;  
     public bool TouchAirWall = false;
     public bool UseIPCLighting = true;
     public bool UseIPCTouch = true;
@@ -42,6 +42,8 @@ public class Config
     public bool FlatShadedRing = false;
     public bool DynamicProbe = true;
     public bool PostProcess = true;
+    public bool ConsoleHiContract = true;
+    public bool ConsoleGlass = true;
     public int AntiAliasing = 0;
     public bool AutoStart = true;
     public string batFileLocation = "";
