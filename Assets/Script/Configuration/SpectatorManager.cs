@@ -144,7 +144,7 @@ public class SpectatorManager : MonoBehaviour
 
         }
         ConfigManager.config.TPCamActivePin = pinNumber;
-        ConfigManager.SaveFile();
+        ConfigManager.SaveFileWait();
     }
 
     public void SaveTransform() // will be called from TPCameraCube
@@ -180,6 +180,6 @@ public class SpectatorManager : MonoBehaviour
                 break;
 
         }
-        ConfigManager.SaveFile();
+        ConfigManager.SaveFileWait();
     }
 }

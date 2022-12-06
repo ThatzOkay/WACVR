@@ -7,47 +7,40 @@ using UnityEngine.UI;
 public class StartBatchManager : MonoBehaviour
 {
     uint pid = 0;
-	public Toggle AutoStartCheckBox;
 
     private void Start() 
     {
         ConfigManager.EnsureInitialization();
-        if (ConfigManager.config.batFileLocation != "" && ConfigManager.config.batFileAutoStart)
-            pid = StartExternalProcess.Start(ConfigManager.config.batFileLocation);
-        UnityEngine.Debug.Log("Batch file with PID: " + pid);
-
-        AutoStartCheckBox.isOn = ConfigManager.config.batFileAutoStart;
+        StartBat();
     }
 
     public void StartBat()
     {
-        Start();
+        if (ConfigManager.config.batFileLocation != "" && ConfigManager.config.AutoStart)
+            pid = StartExternalProcess.Start(ConfigManager.config.batFileLocation);
+        UnityEngine.Debug.Log("Batch file with PID: " + pid);
     }
 
     public void StopBat()
-    {
-        OnDestroy();
-
-    public void ExitApplication()
-    {
-        StopBat();
-        #if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
-        #endif
-        Application.Quit();
-    }
-
-    public void SetAutoStartValue(bool Active)
-    {
-        ConfigManager.config.batFileAutoStart = Active;
-        ConfigManager.SaveFile();
-    }
-    private void OnDestroy() 
     {
         if (pid != 0)
         {
             StartExternalProcess.KillProcess(pid);
             UnityEngine.Debug.Log("Batch file with PID: " + pid + " killed");
         }
+    }
+
+    private void ExitApplication()
+    {
+        OnDestroy();
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
+        Application.Quit();
+    }
+
+    private void OnDestroy() 
+    {
+        StopBat();
     }
 }

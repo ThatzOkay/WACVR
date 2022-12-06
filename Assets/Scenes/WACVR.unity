@@ -8963,18 +8963,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bba178ae260506e44aa83cb36560b34a, type: 3}
---- !u!114 &669938686 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2423535075009293953, guid: bba178ae260506e44aa83cb36560b34a,
-    type: 3}
-  m_PrefabInstance: {fileID: 669938685}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &669938687 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5440830733378705599, guid: bba178ae260506e44aa83cb36560b34a,
@@ -9040,7 +9028,7 @@ PrefabInstance:
     - target: {fileID: 2152940796011086207, guid: dd46221f8de0268428f1a148427fec0d,
         type: 3}
       propertyPath: m_text
-      value: 
+      value: None
       objectReference: {fileID: 0}
     - target: {fileID: 2250131989589984653, guid: dd46221f8de0268428f1a148427fec0d,
         type: 3}
@@ -12452,7 +12440,7 @@ PrefabInstance:
     - target: {fileID: 2152940796011086207, guid: dd46221f8de0268428f1a148427fec0d,
         type: 3}
       propertyPath: m_text
-      value: 
+      value: None
       objectReference: {fileID: 0}
     - target: {fileID: 2250131989589984653, guid: dd46221f8de0268428f1a148427fec0d,
         type: 3}
@@ -20517,7 +20505,7 @@ PrefabInstance:
     - target: {fileID: 2152940796011086207, guid: dd46221f8de0268428f1a148427fec0d,
         type: 3}
       propertyPath: m_text
-      value: 
+      value: None
       objectReference: {fileID: 0}
     - target: {fileID: 2250131989589984653, guid: dd46221f8de0268428f1a148427fec0d,
         type: 3}
@@ -23544,7 +23532,7 @@ GameObject:
   - component: {fileID: 1548027535}
   - component: {fileID: 1548027534}
   m_Layer: 5
-  m_Name: Shitdown
+  m_Name: Shutdown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25398,7 +25386,7 @@ PrefabInstance:
     - target: {fileID: 2152940796011086207, guid: dd46221f8de0268428f1a148427fec0d,
         type: 3}
       propertyPath: m_text
-      value: 
+      value: None
       objectReference: {fileID: 0}
     - target: {fileID: 2250131989589984653, guid: dd46221f8de0268428f1a148427fec0d,
         type: 3}
@@ -53350,7 +53338,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d954af7c8e97fa498727def89aecae7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AutoStartCheckBox: {fileID: 669938686}
 --- !u!4 &1971558086
 Transform:
   m_ObjectHideFlags: 0
@@ -57042,7 +57029,7 @@ PrefabInstance:
     - target: {fileID: 2152940796011086207, guid: dd46221f8de0268428f1a148427fec0d,
         type: 3}
       propertyPath: m_text
-      value: 
+      value: None
       objectReference: {fileID: 0}
     - target: {fileID: 2250131989589984653, guid: dd46221f8de0268428f1a148427fec0d,
         type: 3}
@@ -57927,7 +57914,7 @@ PrefabInstance:
     - target: {fileID: 2152940796011086207, guid: dd46221f8de0268428f1a148427fec0d,
         type: 3}
       propertyPath: m_text
-      value: 
+      value: None
       objectReference: {fileID: 0}
     - target: {fileID: 2250131989589984653, guid: dd46221f8de0268428f1a148427fec0d,
         type: 3}
