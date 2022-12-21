@@ -4018,64 +4018,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1473941619}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &243581849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 243581844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e52616489180d945ade40e7adebd563, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ik: {fileID: 243581845}
-  centerEyeAnchor: {fileID: 2095231903}
-  headAnchorPositionOffset: {x: 0, y: 0.11, z: 0}
-  headAnchorRotationOffset: {x: 0, y: 0, z: 0}
-  leftHandAnchor: {fileID: 1542244751}
-  rightHandAnchor: {fileID: 1862938726}
-  handAnchorPositionOffset: {x: 0, y: 0.125, z: 1.25}
-  handAnchorRotationOffset: {x: 0, y: 0, z: -90}
-  scaleMlp: 1
-  data:
-    scale: 0
-    head:
-      used: 0
-      localPosition: {x: 0, y: 0, z: 0}
-      localRotation: {x: 0, y: 0, z: 0, w: 0}
-    leftHand:
-      used: 0
-      localPosition: {x: 0, y: 0, z: 0}
-      localRotation: {x: 0, y: 0, z: 0, w: 0}
-    rightHand:
-      used: 0
-      localPosition: {x: 0, y: 0, z: 0}
-      localRotation: {x: 0, y: 0, z: 0, w: 0}
-    pelvis:
-      used: 0
-      localPosition: {x: 0, y: 0, z: 0}
-      localRotation: {x: 0, y: 0, z: 0, w: 0}
-    leftFoot:
-      used: 0
-      localPosition: {x: 0, y: 0, z: 0}
-      localRotation: {x: 0, y: 0, z: 0, w: 0}
-    rightFoot:
-      used: 0
-      localPosition: {x: 0, y: 0, z: 0}
-      localRotation: {x: 0, y: 0, z: 0, w: 0}
-    leftLegGoal:
-      used: 0
-      localPosition: {x: 0, y: 0, z: 0}
-      localRotation: {x: 0, y: 0, z: 0, w: 0}
-    rightLegGoal:
-      used: 0
-      localPosition: {x: 0, y: 0, z: 0}
-      localRotation: {x: 0, y: 0, z: 0, w: 0}
-    pelvisTargetRight: {x: 0, y: 0, z: 0}
-    pelvisPositionWeight: 0
-    pelvisRotationWeight: 0
 --- !u!1 &246510119 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 789340281982497741, guid: cf8684b3c4f47b94aa7cb23ce498caf3,
@@ -10356,7 +10298,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 243581849}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: Calibration, Assembly-CSharp
           m_MethodName: calibrateScale
           m_Mode: 1
@@ -11835,7 +11777,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 243581849}
+        - m_Target: {fileID: 1559635269}
           m_TargetAssemblyTypeName: Calibration, Assembly-CSharp
           m_MethodName: calibreateAvatar
           m_Mode: 1
@@ -23741,6 +23683,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1559635268}
+  - component: {fileID: 1559635269}
   m_Layer: 0
   m_Name: Avatar
   m_TagString: Untagged
@@ -23764,6 +23707,64 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1559635269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559635267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e52616489180d945ade40e7adebd563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ik: {fileID: 243581845}
+  centerEyeAnchor: {fileID: 2095231903}
+  headAnchorPositionOffset: {x: 0, y: 0.11, z: 0}
+  headAnchorRotationOffset: {x: 0, y: 0, z: 0}
+  leftHandAnchor: {fileID: 1542244751}
+  rightHandAnchor: {fileID: 1862938726}
+  handAnchorPositionOffset: {x: 0, y: 0.125, z: 1.25}
+  handAnchorRotationOffset: {x: 0, y: 0, z: -90}
+  scaleMlp: 1
+  data:
+    scale: 0
+    head:
+      used: 0
+      localPosition: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0, w: 0}
+    leftHand:
+      used: 0
+      localPosition: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0, w: 0}
+    rightHand:
+      used: 0
+      localPosition: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0, w: 0}
+    pelvis:
+      used: 0
+      localPosition: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0, w: 0}
+    leftFoot:
+      used: 0
+      localPosition: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0, w: 0}
+    rightFoot:
+      used: 0
+      localPosition: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0, w: 0}
+    leftLegGoal:
+      used: 0
+      localPosition: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0, w: 0}
+    rightLegGoal:
+      used: 0
+      localPosition: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0, w: 0}
+    pelvisTargetRight: {x: 0, y: 0, z: 0}
+    pelvisPositionWeight: 0
+    pelvisRotationWeight: 0
 --- !u!114 &1562495064
 MonoBehaviour:
   m_ObjectHideFlags: 0
