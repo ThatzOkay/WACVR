@@ -10,9 +10,11 @@
     </i></h2>
   </p>
   <p>
-    <a href="https://discord.gg/4aFV5QJWN5"><img src="https://img.shields.io/discord/1028269444780261436?color=5865F2&logo=discord&logoColor=white" alt="Discord server"/></a>
     <a href="https://github.com/UiharuKazari2008/WACVR/actions"><img src="https://github.com/UiharuKazari2008/WACVR/actions/workflows/build.yml/badge.svg" alt="Build status"/></a>
 </div>
+
+## Notice
+This is a personal build and is mainly for LTS support and archival for when its removed again
 
 ## Preview
 <img src="https://github.com/UiharuKazari2008/WACVR/blob/main/PreviewImages/Preview.jpg?raw=true" width="350" />
@@ -72,7 +74,7 @@ Also this fork will be a mess for a while as i work my trough all my ideas
 [Video Tutorial](https://www.youtube.com/watch?v=bViY68ltIz8)<br/>
 Automated setup configures the game and downloads WACVR, xxxxtools, and other files for you.  
 Thank you to Glub Glub for releasing this!
-- Download [Glub Glub setup environment](https://github.com/ArcadeGlubGlub/GameSetup/raw/master/WACCAReverse-GlubGlub.7z) and extract it to a folder.
+- Download [Glub Glub setup environment](https://mega.nz/file/cBhh3ZZC#HpifcOQiHdxvMOJCwVPuRXtSuPoRPCsycciZ2_awD_0) and extract it to a folder.
 - Then, follow the `README.txt` file inside to add and setup your game.
 - Add a server in `Game\app\bin\xxxxtools.ini` to connect to.
 - Once done, run `Launch` shortcut to start both WACVR and the game.
@@ -85,7 +87,7 @@ Thank you to Glub Glub for releasing this!
 - You have 2 ways to connect touch to the game. Please only choose one of them:
 
 #### mercuryio
-  - Download [mercuryio.dll](https://wacvr.cf/mercuryio.dll).
+  - Download [GlubGlub](https://mega.nz/file/cBhh3ZZC#HpifcOQiHdxvMOJCwVPuRXtSuPoRPCsycciZ2_awD_0).
   - Put ``mercuryio.dll`` into ``bin`` folder.
   - Add ``[touch] enable=1`` to .ini file
   - Add ``[mercuryio] path=mercuryio.dll`` to .ini file.
